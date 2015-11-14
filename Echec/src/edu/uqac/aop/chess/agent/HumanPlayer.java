@@ -20,7 +20,7 @@ public class HumanPlayer extends Player
 		if(!playGround.getGrid()[mv.xI][mv.yI].isOccupied())
 			return false;
 		if(playGround.getGrid()[mv.xI][mv.yI].getPiece().getPlayer() == this.getColor())
-			return false;
+			return false;	
 		if(!playGround.getGrid()[mv.xI][mv.yI].getPiece().isMoveLegal(mv))
 			return false;		
 		playGround.movePiece(mv);

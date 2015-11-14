@@ -9,7 +9,6 @@ import edu.uqac.aop.chess.piece.Pawn;
 import edu.uqac.aop.chess.piece.Piece;
 import edu.uqac.aop.chess.piece.Queen;
 import edu.uqac.aop.chess.piece.Rook;
-
 public class Board 
 {
 	private Spot[][] grid;
