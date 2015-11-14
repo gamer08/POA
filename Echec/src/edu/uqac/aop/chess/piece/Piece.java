@@ -5,7 +5,6 @@ import edu.uqac.aop.chess.agent.Move;
 public abstract class Piece
 {
 	protected int player;
-	public boolean _validMove;
      
 	public Piece() 
 	{
