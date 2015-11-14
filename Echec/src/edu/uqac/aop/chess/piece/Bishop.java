@@ -19,7 +19,7 @@ public class Bishop extends Piece
 	@Override
 	public String toString() 
 	{
-		return ((this.player == Player.WHITE) ? "P" : "p");
+		return ((this.player == Player.WHITE) ? "B" : "b");
 	}
 
 	@Override

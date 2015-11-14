@@ -1,0 +1,36 @@
+1- correction du problème de logique sur la les lignes suivantes 
+
+Dans HumanPlayer.java
+if(playGround.getGrid()[mv.xI][mv.yI].getPiece().getPlayer() == this.getColor())
+return false;
+
+devient
+
+if(playGround.getGrid()[mv.xI][mv.yI].getPiece().getPlayer() != this.getColor())
+return false;
+
+Raison : on ne pouvait pas déplacer nos propes pièces.
+
+
+Dans AiPlayer.java
+if(playGround.getGrid()[mv.xI][mv.yI].getPiece().getPlayer() == this.getColor())
+return false;
+
+devient
+
+if(playGround.getGrid()[mv.xI][mv.yI].getPiece().getPlayer() != this.getColor())
+return false;
+
+Raison : on ne pouvait pas déplacer nos propes pièces.
+
+
+2- Changement du caractère d'Affichage des fous
+
+Dans Bishop.java
+return ((this.player == Player.WHITE) ? "P" : "p")
+
+devient
+
+return ((this.player == Player.WHITE) ? "B" : "b")
+
+Raison : il utilisait le même symbole que les pions, donc cela porte à confusion.
